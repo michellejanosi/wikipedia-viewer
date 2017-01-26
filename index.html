@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Wikipedia Viewer</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- favicon -->
+    <link rel="icon" href="img/favicon-search.ico" type="image/x-icon">
+  </head>
+  <body>
+    <div id="container">
+      <div id="main">
+        <div class="inner">
+          <h1>Wikipedia Viewer</h1>
+
+          <div class="input-group">
+            <input id="searchParam" type="text" class="form-control input-control center-block"> <span class="input-group-btn input-space">
+            <button id="searchButton" class="btn btn-primary btn-md btn-input center-block"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button></span>
+          </div>
+
+          <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank"><p class="random">Or click here for a random article</p></a>
+          <div id="results"></div>
+
+        </div> <!-- end 'inner' -->
+      </div> <!-- end 'main' -->
+    </div> <!-- end 'container' -->
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!--
+User Story: I can search Wikipedia entries in a search box and see the resulting
+Wikipedia entries.
+
+User Story: I can click a button to see a random Wikipedia entry.
+
+To-Do List:
+- Build a page that has a search box and a button that will take the string in
+  the search box and find articles related to the search string on Wikipedia.
+
+- Wire up the button to query the Wikipedia API with the string query when it
+  is clicked
+-->
